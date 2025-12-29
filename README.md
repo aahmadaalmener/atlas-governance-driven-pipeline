@@ -140,7 +140,7 @@ ATLAS is not designed for that purpose.
 
 The repository is organized to reflect the governed nature of the system:
 
-
+```txt
 ATLAS/
 ├── README.md
 ├── GETTING_STARTED.md
@@ -177,7 +177,7 @@ ATLAS/
 │
 └── glossary/
     └── terminology.md
-
+```
 
 Each directory represents a conceptual boundary, not just a folder.
 
