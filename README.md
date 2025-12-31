@@ -44,6 +44,46 @@ It blocks, routes backward, or stops entirely.
 Refusal is treated as a valid and informative output.
 
 
+### Refusal as a Governed Outcome
+
+In ATLAS, refusal is not treated as an error or an edge case.
+
+When required information is missing, when architectural authority is unclear,
+or when proceeding would force the system to invent assumptions,
+the pipeline is expected to stop.
+
+That decision is explicit, logged, and traceable.
+
+Some executions result in progression.
+Others result in refusal.
+
+Both outcomes are considered valid,
+as long as they are produced under governance
+and within the pipeline’s defined authority boundaries.
+
+### Governed Outcomes: Refusal vs Progression
+
+The ATLAS pipeline produces different outcomes depending on
+the stability of intent and the availability of authoritative inputs.
+
+The following examples illustrate two legitimate results
+produced under the same governance rules.
+
+- **Refusal Example**  
+  A real execution where the pipeline stopped because
+  proceeding would have required inferring an architectural contract.  
+  → [`refusal-example.md`](./refusal-example.md)
+
+- **Successful Run Example**  
+  A real execution where stabilized intent and verified interfaces
+  allowed the pipeline to proceed through execution and governance approval.  
+  → [`successful-run-example.md`](./successful-run-example.md)
+
+
+These examples are not demonstrations of capability,
+but of decision boundaries.
+
+
 Before diving into the architecture or governance details,
 read `PIPELINE_IDENTITY.md`.
 
@@ -140,7 +180,7 @@ ATLAS is not designed for that purpose.
 
 The repository is organized to reflect the governed nature of the system:
 
-
+```txt
 ATLAS/
 ├── README.md
 ├── GETTING_STARTED.md
@@ -177,7 +217,7 @@ ATLAS/
 │
 └── glossary/
     └── terminology.md
-
+```
 
 Each directory represents a conceptual boundary, not just a folder.
 
@@ -237,4 +277,3 @@ It is designed to remain dependable over time.
 If you are working with systems where decisions matter,
 and where accountability is not optional,
 this way of thinking may resonate.
-
