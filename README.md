@@ -188,6 +188,8 @@ ATLAS/
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 ├── PIPELINE_IDENTITY.md
+├── refusal-example.md
+├── successful-run-example.md
 │
 ├── docs/
 │   ├── PIPELINE_OVERVIEW.md
